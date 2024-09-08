@@ -1,0 +1,100 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header ve Navigasyon Menüsü */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ana Giriş Bölümü */
+#home {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#home blockquote {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Biyografi Bölümü */
+#info {
+    padding: 40px;
+    background-color: #eaeaea;
+}
+
+#info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Eserler Bölümü */
+#books {
+    padding: 40px;
+    background-color: #fff;
+}
+
+#books h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#books ul {
+    list-style-type: square;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
