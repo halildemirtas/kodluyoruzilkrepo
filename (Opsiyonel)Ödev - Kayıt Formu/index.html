@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Kayıt Formu</h1>
+    <p id="description">Lütfen bilgilerinizi girin ve kayıt olun!</p>
+
+    <form id="survey-form">
+        <!-- İsim Giriş Alanı -->
+        <label id="name-label" for="name">İsim:</label>
+        <input type="text" id="name" placeholder="İsminizi girin" required>
+
+        <!-- E-posta Giriş Alanı -->
+        <label id="email-label" for="email">E-posta:</label>
+        <input type="email" id="email" placeholder="E-posta adresinizi girin" required>
+
+        <!-- Sayı Giriş Alanı -->
+        <label id="number-label" for="number">Yaşınız:</label>
+        <input type="number" id="number" min="18" max="99" placeholder="Yaşınızı girin" required>
+
+        <!-- Seçim Kutusu -->
+        <label for="dropdown">Cinsiyet:</label>
+        <select id="dropdown" required>
+            <option value="">Seçiniz</option>
+            <option value="male">Erkek</option>
+            <option value="female">Kadın</option>
+        </select>
+
+        <!-- Radyo Düğmeleri -->
+        <p>Katılma Şekliniz:</p>
+        <label>
+            <input type="radio" name="participation" value="online" required> Online
+        </label>
+        <label>
+            <input type="radio" name="participation" value="onsite" required> Yüz Yüze
+        </label>
+
+        <!-- Onay Kutuları -->
+        <p>İlgi Alanlarınız:</p>
+        <label>
+            <input type="checkbox" name="interests" value="coding"> Kodlama
+        </label>
+        <label>
+            <input type="checkbox" name="interests" value="design"> Tasarım
+        </label>
+
+        <!-- Metin Alanı -->
+        <label for="comments">Ek Yorumlar:</label>
+        <textarea id="comments" rows="4" placeholder="Eklemek istedikleriniz..."></textarea>
+
+        <!-- Gönder Butonu -->
+        <input type="submit" id="submit" value="Gönder">
+    </form>
+
+</body>
+</html>
