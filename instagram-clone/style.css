@@ -1,0 +1,118 @@
+/* Navbar'ı sabitlemek */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+/* Body'ye padding eklemek */
+body {
+    padding-top: 54px;
+    background-color: #fafafa;
+}
+
+/* Logo için margin */
+.navbar .logo {
+    margin-left: 192px;
+}
+
+/* Arama kısmını d-flex ile ortalamak ve soldan 5 birim margin vermek */
+.navbar .search {
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+/* Placeholder arka planına arama simgesi eklemek */
+.search input::placeholder {
+    background-image: url('assets/search-icon.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+/* Sağ üst menüye margin vermek */
+.navbar .top-menu {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* Sağ üst menü için responsive display */
+@media (max-width: 576px) {
+    .navbar .top-menu {
+        display: none;
+    }
+}
+
+/* İçerik alanı için offset ve margin ayarları */
+.content {
+    margin-top: 2px;
+    margin-left: 16.6667%;
+}
+
+/* Middlearea için maksimum yükseklik */
+.middlearea {
+    max-height: 200px !important;
+}
+
+/* Default ve ölçek değerleri ayarlama */
+.col {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .col {
+        width: 50%;
+    }
+}
+
+/* Hikayeler kısmı için isimleri resimlerin altına getirme */
+.stories .story-name {
+    text-align: center;
+}
+
+/* İçerik kısmında üç nokta sağda olmalı */
+.content .three-dots {
+    float: right;
+}
+
+/* Beğenme, yorum yapma, paylaşma kısmında border olmamalı */
+.actions {
+    border: none;
+}
+
+/* Bookmark ikonunun offset'i */
+.bookmark {
+    margin-left: 7px;
+}
+
+/* Card header ve footer'lar beyaz renk olmalı */
+.card-header,
+.card-footer {
+    background-color: #ffffff;
+}
+
+/* Yorum paylaş metnini sağa almak */
+.comment-share {
+    text-align: right;
+}
+
+/* Sağ panel için stickysidebar ve rightpanel */
+.stickysidebar {
+    position: sticky;
+    top: 0;
+}
+
+.rightpanel {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* Tümünü gör ve takip et yazılarını sağa almak */
+.view-all,
+.follow {
+    text-align: right;
+}
