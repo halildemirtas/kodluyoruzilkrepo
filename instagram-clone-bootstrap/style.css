@@ -1,0 +1,53 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 54px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-left: 192px;
+}
+
+.form-inline .form-control {
+    width: 250px;
+    margin-left: 5px;
+}
+
+.form-inline .form-control::placeholder {
+    background-image: url('search-icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.story img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ff9900;
+    padding: 3px;
+}
+
+.card {
+    max-height: 200px !important;
+}
+
+.card-header .rounded-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.card-body i {
+    font-size: 24px;
+}
+
+.far.fa-bookmark {
+    margin-left: 7px;
+}
+
+.offset-md-2 {
+    margin-top: 20px;
+}
