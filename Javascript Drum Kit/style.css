@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.drum-kit {
+  display: flex;
+  gap: 20px;
+}
+
+.drum {
+  padding: 20px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FF6347;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px #C71585;
+  transition: 0.1s;
+}
+
+.drum:active {
+  box-shadow: 0 2px #8B0000;
+  transform: translateY(4px);
+}
+
+.drum.pressed {
+  background-color: #32CD32;
+  box-shadow: 0 2px #006400;
+}
